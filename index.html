@@ -21,6 +21,13 @@
             <h1>{{ product }}</h1>
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
+            <ul>
+              <li v-for='detail in details'>{{ detail }}</li>
+            </ul>
+            <div v-for='v in variants' :key='v.id'>{{v.color}}</div>
+            <ul>
+              <li v-for='s in sizes'>{{s}}</li>
+            </ul>
           </div>
         </div>
       </div>
