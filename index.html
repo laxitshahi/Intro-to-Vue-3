@@ -20,7 +20,7 @@
           <div class="product-info">
             <h1>{{ product }}</h1>
             <!-- v-show toggles elements visibility, v-if adds and removes element from the DOM-->
-            <p v-show = 'onSale == true'>On Sale!</p>
+            <p v-show ='onSale'>On Sale!</p>
             <p v-if='inventory > 10'>In Stock</p>
             <p v-else if='inventory <= 10 && inventory > 0'>Almost sold out</p>
             <p v-else>Sold out</p>
